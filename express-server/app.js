@@ -31,14 +31,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/werewolf", (req, res) => {
-  console.log("React hit us!");
-  res.send({
-    msg: "here we go werewolf",
-  });
-});
-
 let PORT = process.env.PORT || 3000;
-let HOST = process.env.HOST || "localhost";
 
 app.listen(PORT, () => console.log("server on and on", PORT));
